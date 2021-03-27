@@ -1,0 +1,220 @@
+
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size:x-large;
+	color: black;
+	background: -webkit-linear-gradient(to left, gray, white, white 90%);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, gray, white,white 90% ); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+	
+}
+
+
+
+/* Scroll Personalizado */
+
+body::-webkit-scrollbar {
+	width: 20px;
+	background: gray;
+}
+
+body::-webkit-scrollbar-thumb {
+	background: black;
+	border-radius: 20px;
+}
+
+
+.menu_bar {
+	display:none;
+}
+
+header {
+	width: 100%;
+	position: fixed;
+	z-index:40; 
+
+}
+.contenido {
+  padding-top: 70px; /*distancia entre el contenido */
+}
+
+/*color de fondo de la barra */
+header nav {
+	background:black;
+	max-width: 2000px;
+	z-index:40; 
+	width: 100%;
+
+}
+
+header nav ul {
+	list-style:none;
+	
+}
+
+
+
+header nav ul li {
+	display:inline-block;
+	position: relative;
+	font-family: Arial, sans-serif;
+	font-size: x-large;
+	
+}
+
+
+/* color al pasar el cursor*/
+header nav ul li:hover {
+	background:#626363;
+
+
+}
+/* para quitar la linea de los links*/
+a:link, a:visited, a:active {
+	text-decoration:none;
+}
+
+header nav ul li a {
+	color: #fafafa;
+	display:block;
+	text-decoration:none;
+	padding: 20px;
+}
+
+header nav ul li a span {
+	margin-right:10px;
+}
+
+header nav ul li:hover .children {
+	display:block;
+	
+}
+
+header nav ul li .children {
+	display: none;
+	background:#464747;
+	position: absolute;
+	height: 700%; /* tamaño del menu desplegable */
+	width: 150%;
+	z-index:1000;
+	overflow: auto; /*colocar scroll*/
+}
+/*scroll*/
+header nav ul li ::-webkit-scrollbar {
+	width: 20px;
+	background: gray;
+}
+
+header nav ul li ::-webkit-scrollbar-thumb {
+	background: rgb(218, 213, 213);
+	border-radius: 20px;
+}
+/*cambio de tamaño de texto responsive*/
+
+@media (max-width:950px) and (min-width:500px) {
+    .mifuente{
+       font-size: 20px;
+    }
+}
+
+.container-fluid{
+	max-height: 200px !important;
+   }
+
+
+
+
+header nav ul li .children li {
+	display:block;
+	overflow: hidden;
+	border-bottom: 1px solid rgba(12, 12, 12, 0.5);
+	
+}
+
+header nav ul li .children li a {
+	display: block;
+	
+}
+
+header nav ul li .children li a span {
+	float: right;
+	position: relative;
+	top:3px;
+	margin-right:0;
+	margin-left:10px;
+}
+
+header nav ul li .caret {
+	position: relative;
+	top:3px;
+	margin-left:10px;
+	margin-right:0px;
+}
+
+@media screen and (max-width: 800px) {
+	body {
+		padding-top:80px;
+	}
+
+	.menu_bar {
+		display:block;
+		width:100%;
+		
+		background:#070708;
+	}
+
+	.menu_bar .bt-menu {
+		display: block;
+		padding: 20px;
+		color: #fff;
+		overflow: hidden;
+		font-size: 25px;
+		font-weight: bold;
+		text-decoration: none;
+	}
+
+	.menu_bar span {
+		float: right;
+		font-size: 40px;
+	}
+
+	header nav {
+		width: 80%;
+		height: calc(100% - 80px);
+		position: fixed;
+		right:100%;
+		margin: 0;
+		overflow: scroll;
+	}
+
+	header nav ul li {
+		display: block;
+		border-bottom:1px solid rgb(255, 255, 255)0.972);
+	}
+
+	header nav ul li a {
+		display: block;
+	}
+
+
+/*carusel responsive */
+.carousel-inner{
+	color: black;
+}
+.carousel-inner img{
+	width: 100%;
+	height: 100%;
+}
+	
+
