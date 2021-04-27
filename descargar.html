@@ -111,7 +111,7 @@
    <style>
     .parallax {
       /* The image used */
-      background-image: url("static/img/datos.png");
+      background-image: url("static/img/descargar.png");
     
       /* Set a specific height */
       min-height: 375px;
@@ -124,8 +124,8 @@
     }
 
     .parallax1 {
-      background-image: url("static/img/datos.png");
-      min-height: 70px;
+      background-image: url("static/img/descargar.png");
+      min-height: 100px;
       /* Create the parallax scrolling effect */
       background-attachment: fixed;
       background-position: center;
@@ -141,9 +141,8 @@
         <div class="col-sm-24 col-md-24 col-lg-24">
           <div class="card">
             <div class="card-body p-4 text-justify mifuente">
-              <p>Los datos que se utilizan se obtuvieron de la secretaria de salud.</p>
-              <p>Previamente se hizo la Extracción de servicios de salud a un archivo de tipo csv del sitio <a href="http://www.dgis.salud.gob.mx/contenidos/basesdedatos/Datos_Abiertos_gobmx.html">Datos abiertos</a>, posteriormente se hizo la creación de tabla y carga en MySQL</p> 
-              <p>La localidad de clínica, estado y enfermedad van de acuerdo con el archivo CIE 10.</p>
+              <p>En Tableau public también existe la opción para poder descargar, la cual nos permite obtener los datos o imágenes correspondientes de estas visualizaciones. A continuación, se explica de manera específica en como poder
+                hacer esta descarga </p>
             </div>
           </div>
         </div>
@@ -154,131 +153,145 @@
 
      <div  style="background-color:black" class="container-fluid py-2 mifuente">
       <div class="container text-white">
-        <h1><b>Estructura</b></h1>
+        <h1><b>Pasos para la descarga</b></h1>
       </div>
      </div>
     
      <div class="contenedor mifuente py-3 " style="background-color:white">
-      <div class="row">
-        <div class="col-sm-12 col-md-12 col-lg-12 text-center mifuente">
-          <p>&nbsp; La estructura de los datos se subdivide en 3 fuentes importantes que nos permitieron poder trabajar con ellos</p>  
-        </div>
-
-        <div class="col-sm-12 col-md-12 col-lg-12 mifuente">
-          <p>&nbsp;1.- La tabla que se carga directamente del formato csv tiene 45 variables diferentes. Con diferentes campos y podemos encontrar la descripción de cada uno de ellos en <a href="http://www.dgis.salud.gob.mx/contenidos/basesdedatos/da_egresoshosp_gobmx.htm">contenido de las bases de datos</a></p>
-          <p>&nbsp;2.- La tabla con las 45 variables se relaciona con la Tabla de Clínicas de salud, disponible en la <a href="http://www.dgis.salud.gob.mx/contenidos/intercambio/clues_gobmx.html">Secretaria de salud</a>, que cuenta con 38,332 clínicas</p>  
-          <p>&nbsp;3.- Por último, se encuentra la tabla contiene todas las afecciones de la Clasificación Internacional de Enfermedades, que se encuentra en <a href="http://www.dgis.salud.gob.mx/descargas/datosabiertos/saeh_catalogos_2010-2013.zip">Clasificación de enfermedades</a> en el que podemos encontrar la carpeta “saeh_catalogos_2010-2013”, en ella se encuentra el archivo llamado “saeh_catcie10.csv”.</p>
-
-        </div>
+      
+      <div class="col-sm-12 col-md-12 col-lg-12 mifuente">
+        <p>&nbsp;1.- En la parte inferior de una vista de Tableau se encuentra un botón con la opción de descargar, como se muestra en la ilustración.</p>
       </div>
+
       <div class="pt-3 h-75p align-items-center d-flex justify-content-center col-sm-12 col-md-12 col-lg-12">
-        <img src="static/img/datoss.png" height="250px" width="350px">
+        <img src="static/img/icono.png" >
+      </div>
+    
+      <div class="col-sm-12 col-md-12 col-lg-12 mifuente">
+        <p>&nbsp;2.- Seleccione un formato de descarga:</p>
+        <p>&nbsp;Los formatos de descarga disponibles dependen de los permisos concedidos por los propietarios de contenido y los administradores del sitio de Tableau.</p>
       </div>
 
+      <div class="pt-3 h-75p align-items-center d-flex justify-content-center col-sm-12 col-md-12 col-lg-12">
+        <img src="static/img/opdescarga.png" >
       </div>
     </div>
+  
 
     <div class="parallax1"></div>  
 
     <div  style="background-color:black" class="container-fluid py-2 mifuente">
       <div class="container text-white">
-        <h1><b>Organización</b></h1>
+        <h1><b>Formatos de descarga</b></h1>
       </div>
      </div>
-    
-    <div class="contenedor mifuente py-3 " style="background-color:white">
+
+     <div class="contenedor mifuente py-3 " style="background-color:white">
       <div class="col-sm-24 col-md-12 col-lg-12 text-center">
-        <p>&nbsp;Para las visualizaciones se crearón tablas en MySQL, unificando los datos obtenidos y seleccionando solo las enfermedades crónicas no transmisibles, obtenidas de diversas fuentes principalmente de la Organización Mundial de Salud (OMS) y del Instituto Mexicano del Seguro Social(IMSS)</p>  
+        <b><p>&nbsp;Los libros de trabajo se pueden compartir con personas que no tengan Tableau Desktop de las siguientes maneras:</p> </b> 
       </div>
 
       <div class="row">
-
-        <div class="col-sm-12 col-md-6 col-lg-6">
-          <h4><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="black" class="bi bi-bookmark-plus-fill" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5zm6.5-11a.5.5 0 0 0-1 0V6H6a.5.5 0 0 0 0 1h1.5v1.5a.5.5 0 0 0 1 0V7H10a.5.5 0 0 0 0-1H8.5V4.5z"/>
-          </svg>La primera tabla que se ocupó para las visualizaciones contiene los siguientes datos </h4>
         
-        <table class="table table-bordered" >
-            <tbody>
-              <tr>
-                <td class="table-info"><h5><b>Nombre</b></h5></td>
-                <td class="table-info"><h5><b>Descripción</b></h5></td>
-              </tr>
-              <tr>
-                <td><h5>Año</h5></td>
-                <td><h5>Año</h5></td>
-              </tr>
-              <tr>
-                <td><h5>Clues</h5></td>
-                <td><h5>Clave Única de Establecimientos en Salud</h5></td>
-              </tr>
-              <tr>
-                <td><h5>Afecprin</h5></td>
-                <td><h5>Código CIE-10 de la reselección de la afección principal</h5></td>
-              </tr>
-              <tr>
-                <td><h5>Sexo</h5></td>
-                <td><h5>Sexo</h5></td>
-              </tr>
-              <tr>
-                <td><h5>Edad</h5></td>
-                <td><h5>Edad cumplida al ingreso</h5></td>
-              </tr>
-              <tr>
-                <td><h5>Motegre</h5></td>
-                <td><h5>Motivo de egreso</h5></td>
-              </tr>
-              <tr>
-                <td><h5>Nombre de la unidad</h5></td>
-                <td><h5>Nombre de la unidad</h5></td>
-              </tr>
-              <tr>
-                <td><h5>Latitud</h5></td>
-                <td><h5>Latitud</h5></td>
-              </tr>
-              <tr>
-                <td><h5>Longitud</h5></td>
-                <td><h5>Longitud</h5></td>
-              </tr>
-              <tr>
-                <td><h5>Nombre de la entidad</h5></td>
-                <td><h5>Entidad de residencia habitual</h5></td>
-              </tr>
-              <tr>
-                <td><h5>Enfermedad</h5></td>
-                <td><h5>Categoría</h5></td>
-              </tr>
-              <tr>
-                <td><h5>Descripción</h5></td>
-                <td><h5>Subcategoría</h5></td>
-              </tr>
-
-              
-            </tbody>
-          </table>
-       </div> 
-       
-       <div class="col-sm-12 col-md-6 col-lg-6">
-        <h4><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="black" class="bi bi-bookmark-plus-fill" viewBox="0 0 16 16">
-          <path fill-rule="evenodd" d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5zm6.5-11a.5.5 0 0 0-1 0V6H6a.5.5 0 0 0 0 1h1.5v1.5a.5.5 0 0 0 1 0V7H10a.5.5 0 0 0 0-1H8.5V4.5z"/>
-        </svg>La segunda tabla contiene todas las afecciones correspondientes las enfermedades crónicas no transmisibles y proporciona los siguientes datos </h4>
-      
-      <table class="table table-bordered" >
-          <tbody>
-            <tr>
-              <td class="table-info"><h5><b>Código</b></h5></td>
-              <td class="table-info"><h5><b>Descripción</b></h5></td>
-            </tr>
-      
-          
-          </tbody>
-        </table>
-        <div class="py-5 pt-3 h-75p align-items-center d-flex justify-content-center col-sm-12 col-md-12 col-lg-12">
-          <img src="static/img/tablas.png" height="350px" width="450px">
+        <div class="pt-3 h-75p align-items-center d-flex justify-content-center col-sm-12 col-md-4 col-lg-4">
+          <div class="container">
+              <div class="card" style="width: 27rem;">
+                <div class="card-header">Imagen</div>
+                <div class="card-body p-4 mifuente">
+                  <p>Descarga una imagen en formato .png. Los filtros, parámetros o selecciones aplicados actualmente en Tableau se reflejan en la imagen descargada.</p>
+                  <div class="py-5 pt-3 h-75p align-items-center d-flex justify-content-center col-sm-12 col-md-12 col-lg-12">
+                    <img src="static/img/imagen.png" height="150px">
+                  </div>
+              </div>
+            </div>
+          </div> 
         </div>
-      </div> 
+
+        <div class="pt-3 h-75p align-items-center d-flex justify-content-center col-sm-12 col-md-4 col-lg-4">
+          <div class="container">
+              <div class="card" style="width: 27rem;">
+                <div class="card-header">Datos</div>
+                <div class="card-body p-4 mifuente">
+                  <p>Se abre una pestaña nueva en la ventana del navegador donde se recogen los datos de la vista en un resumen y al detalle. También puede descargar los datos como un archivo de valores separados por comas (.csv).</p>
+                  <div class="py-5 pt-3 h-75p align-items-center d-flex justify-content-center col-sm-12 col-md-12 col-lg-12">
+                    <img src="static/img/data.png" height="150px">
+                  </div>
+              </div>
+            </div>
+          </div> 
+        </div>
+
+        <div class="pt-3 h-75p align-items-center d-flex justify-content-center col-sm-12 col-md-4 col-lg-4">
+          <div class="container">
+              <div class="card" style="width: 27rem;">
+                <div class="card-header">Tabulación cruzada</div>
+                <div class="card-body p-4 mifuente">
+                  <p>Seleccionar una hoja del dashboard para descargarla. En formato, seleccionar .csv o Microsoft Excel .xlsx.
+                      Los filtros, parámetros o selecciones aplicados se reflejan en la tabulación cruzada descargada.
+                    </p>
+                  <div class="py-5 pt-3 h-75p align-items-center d-flex justify-content-center col-sm-12 col-md-12 col-lg-12">
+                    <img src="static/img/dashboard.jpg" height="150px">
+                  </div>
+              </div>
+            </div>
+          </div> 
+        </div>
+
+      </div>
+      
+      
+      <div class="row">
+        
+        <div class="pt-3 h-75p align-items-center d-flex justify-content-center col-sm-12 col-md-4 col-lg-4">
+          <div class="container">
+              <div class="card" style="width: 27rem;">
+                <div class="card-header">PDF</div>
+                <div class="card-body p-4 mifuente">
+                  <p>En Incluir, seleccione la parte del libro de trabajo que quiere descargar. Seleccione esta vista, hojas específicas de un libro de trabajo o dashboard, o seleccione todo. Elija una escala a fin de controlar la apariencia de la imagen en el PDF. Seleccione un tamaño de papel y una orientación.</p>
+                  <div class="py-5 pt-3 h-75p align-items-center d-flex justify-content-center col-sm-12 col-md-12 col-lg-12">
+                    <img src="static/img/pdf.png" height="150px">
+                  </div>
+              </div>
+            </div>
+          </div> 
+        </div>
+
+        <div class="pt-3 h-75p align-items-center d-flex justify-content-center col-sm-12 col-md-4 col-lg-4">
+          <div class="container">
+              <div class="card" style="width: 27rem;">
+                <div class="card-header">PowerPoint</div>
+                <div class="card-body p-4 mifuente">
+                  <p>Descarga las hojas seleccionadas como imágenes en diapositivas individuales en una presentación de PowerPoint. Para las vistas sin pestañas, solo puede seleccionar el contenido visible. El archivo de PowerPoint generado incluye una diapositiva de título con el nombre del libro de trabajo y la fecha en que se generó el archivo. </p>
+                  <div class="py-5 pt-3 h-75p align-items-center d-flex justify-content-center col-sm-12 col-md-12 col-lg-12">
+                    <img src="static/img/powepoint.png" height="150px">
+                  </div>
+              </div>
+            </div>
+          </div> 
+        </div>
+
+        <div class="pt-3 h-75p align-items-center d-flex justify-content-center col-sm-12 col-md-4 col-lg-4">
+          <div class="container">
+              <div class="card" style="width: 27rem;">
+                <div class="card-header">Libro de trabajo de Tableau</div>
+                <div class="card-body p-4 mifuente">
+                  <p>Descarga un libro de trabajo que puede abrir con Tableau Desktop. (Como alternativa, puede seleccionar Servidor > Abrir libro de trabajo en Tableau Desktop).
+                    Tiene la opción de descargar el libro de trabajo en distintas versiones de Tableau o mantenerlo en su versión actual.</p>
+                  <div class="py-5 pt-3 h-75p align-items-center d-flex justify-content-center col-sm-12 col-md-12 col-lg-12">
+                    <img src="static/img/simbolo.png" height="150px">
+                  </div>
+              </div>
+            </div>
+          </div> 
+        </div>
+
+      </div>
     </div>
-  </div>
+
+       
+
+      
+    
 
     <div class="parallax1"></div>  
 
