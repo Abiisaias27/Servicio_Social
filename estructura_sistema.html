@@ -164,6 +164,7 @@
     
     <!-- Container element -->
     <a name="ano"></a>
+
     <div class="parallax"></div>
 
      <div  style="background-color:black" class="container-fluid py-2 mifuente">
@@ -178,22 +179,364 @@
           <p>&nbsp; En esta sección vamos a encontrar</p>
         </div>
       </div>
-      <h4>&nbsp;&nbsp; &nbsp; &nbsp; <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
-      </svg> Servicios por clínica y por estado </a></h4>
-      <h4>&nbsp;&nbsp; &nbsp; &nbsp; <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
-      </svg> Servicios otorgados por categoría</a></h5>
-      <h4>&nbsp;&nbsp; &nbsp; &nbsp; <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
-      </svg> Edad promedio por categoría</a></h4>
-      <h4>&nbsp;&nbsp; &nbsp; &nbsp; <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
-      </svg> Mapa de defunciones por categoría</a></h4>
-      <h4>&nbsp;&nbsp; &nbsp; &nbsp; <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
-      </svg> Servicios por mes y por género</a></h4>
+   
+
+    <a id="xCodigoPrograma01" 
+          onclick="MostrarOcultar('CodigoPrograma01');" 
+          href="#_self">
+          <h4>&nbsp;&nbsp; &nbsp; &nbsp;
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+            </svg> Servicios por clínica y por estado
+          </h4>
+      </a>
+
+      <pr id="CodigoPrograma01" 
+            style="display: none;">
+            
+        <div class="col-sm-12 col-md-12 col-lg-12 mifuente">
+          <p>&nbsp;La primera visualización con nombre “Mapa de frecuencias de servicios otorgados por clínica y por estado”, se puede observar en la imagen. Los puntos rojos representan las clínicas que se encuentran en cada estado y donde se encontraran los datos a través de los años 2000 al 2017. </p>      
+        </div>
+
+        <div class="pt-3 h-75p align-items-center d-flex justify-content-center col-sm-12 col-md-12 col-lg-12">
+          <img src="static/img/estados.png">
+        </div>
+
+    
+    <div class="contenedor mifuente py-3 ">
+  
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-6 mifuente text-center" >
+          Podemos encontrar datos importantes dentro de esta visualización, primeramente, de manera más general si colocamos el cursor por encima de un estado del mapa, no de un punto rojo se mostrará información como es la que se muestra en la imagen </p>
+          <div class="pt-3 h-75p align-items-center d-flex justify-content-center col-sm-12 col-md-12 col-lg-12">
+            <img src="static/img/desestados.png">
+          </div>
+        </div>
+
+       <div class="col-sm-12 col-md-6 col-lg-6 mifuente text-center">
+        <p>También tenemos la opción de seleccionar un punto rojo en cualquier estado como se muestra en la imagen</p>
+        <div class="pt-3 h-75p align-items-center d-flex justify-content-center col-sm-12 col-md-12 col-lg-12">
+          <img src="static/img/unidad.png">
+        </div>
+       </div>
+
+      </div>
+    </div> 
+
+    <div class="col-sm-12 col-md-12 col-lg-12 mifuente">
+      <p class="text-center"><b>Uso de filtros</b></p>
+      <p>&nbsp;Ahora se mostrará cómo se puede hacer uso de los filtros y algunas otras herramientas que nos va a permitir observar de mejor manera ciertos datos. 
+        </p>      
     </div>
+
+    <div class="row">
+
+      <div class="col-sm-12 col-md-6 col-lg-6 mifuente text-center" >
+        <p>Primeramente, como ejemplo vamos a seleccionar en año todo y posteriormente seleccionar 2007 como se muestra</p>
+        <div class="pt-3 h-75p align-items-center d-flex justify-content-center col-sm-12 col-md-12 col-lg-12">
+          <img src="static/img/filtroa.png">
+        </div>
+      </div>
+
+     <div class="col-sm-12 col-md-6 col-lg-6 mifuente text-center">
+      <p>Posteriormente podemos seleccionar la categoría de neoplasias </p>
+      <div class="pt-3 h-75p align-items-center d-flex justify-content-center col-sm-12 col-md-12 col-lg-12">
+        <img src="static/img/filtroc.png">
+      </div>
+     </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-sm-12 col-md-6 col-lg-6 mifuente text-center" >
+        <p>También podemos utilizar las herramientas de lado izquierdo que nos permiten acerca nuestro mapa</p>
+        <div class="pt-3 h-75p align-items-center d-flex justify-content-center col-sm-12 col-md-12 col-lg-12">
+          <img src="static/img/aumentar.png">
+        </div>
+      </div>
+
+     <div class="col-sm-12 col-md-6 col-lg-6 mifuente text-center">
+      <p>Dirigiéndonos a la parte inferior de estas opciones y seleccionar desplazarse para poder observar de mejor manera cada uno de los estados </p>
+      <div class="pt-3 h-75p align-items-center d-flex justify-content-center col-sm-12 col-md-12 col-lg-12">
+        <img src="static/img/desplazar.png">
+      </div>
+     </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-sm-12 col-md-6 col-lg-6 mifuente text-center" >
+        <p>Una vez seleccionados los filtros podemos observar que en el año 2007 en la categoría de neoplasias la cantidad mínima de egresos se encuentra en el estado de Quintana Roo con 125 </p>
+        <div class="pt-3 h-75p align-items-center d-flex justify-content-center col-sm-12 col-md-12 col-lg-12">
+          <img src="static/img/ejemplo1.png">
+        </div>
+      </div>
+
+     <div class="col-sm-12 col-md-6 col-lg-6 mifuente text-center">
+      <p>También podemos observar que el estado con mayores egresos en el año 2007 y en la categoría de neoplasias es la Ciudad de México con un total de 19,945 </p>
+      <div class="pt-3 h-75p align-items-center d-flex justify-content-center col-sm-12 col-md-12 col-lg-12">
+        <img src="static/img/ejemplo1_1.png">
+      </div>
+     </div>
+
+    </div>
+
+    <div class="parallax1"></div>
+    
+    </pr>	
+
+      <a id="xCodigoPrograma02" 
+          onclick="MostrarOcultar('CodigoPrograma02');" 
+          href="#_self">
+          <h4>&nbsp;&nbsp; &nbsp; &nbsp;
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+            </svg> Servicios otorgados por categoría
+          </h4>
+      </a>
+
+      
+      <pr id="CodigoPrograma02" 
+            style="display: none;">
+            
+        <div class="col-sm-12 col-md-12 col-lg-12 mifuente">
+          <p>&nbsp;En esta visualización podemos observar primeramente las barras para indicar cada una de las categorías, ordenadas en base a su frecuencia de mayor a menor empezando del lado izquierdo, estas de un periodo del 2000 al 2017</p>      
+          <p>&nbsp;En la parte superior de cada barra de una categoría, se observa el número de egresos de ella, y en la parte inferior se muestra el nombre de la categoría</p>
+        
+        </div>
+
+        <div class="pt-3 h-75p align-items-center d-flex justify-content-center col-sm-12 col-md-12 col-lg-12">
+          <img src="static/img/categorias.png">
+        </div>
+
+    
+      <div class="col-sm-12 col-md-12 col-lg-12 mifuente text-center" >
+        <p>&nbsp;En la vista emergente podemos encontrar la subcategoría, de cada una de estas ordenadas en base a su frecuencia de mayor a menor como se muestra, donde se observa la vista emergente de la categoría del sistema circulatorio y nos despliega todas las subcategorías con su recuento de egreso.   </p>
+        <div class="pt-3 h-75p align-items-center d-flex justify-content-center col-sm-12 col-md-12 col-lg-12">
+          <img src="static/img/vista.png">
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-12 col-lg-12 mifuente">
+        <p class="text-center"><b>Uso de filtros</b></p>   
+      </div>
+
+    <div class="row">
+
+      <div class="col-sm-12 col-md-6 col-lg-6 mifuente text-center" >
+        <p>En esta ocasión usaremos los filtros donde solo seleccionaremos el año 2012 y la ciudad de México</p>
+        <div class="pt-3 h-75p align-items-center d-flex justify-content-center col-sm-12 col-md-12 col-lg-12">
+          <img src="static/img/filtros2.png">
+        </div>
+      </div>
+
+     <div class="col-sm-12 col-md-6 col-lg-6 mifuente text-center">
+      <p>Podemos observar que en el año 2012 y solo en la ciudad de México la cantidad de egresos es mayor en la categoría de neoplasias con 22,713 y se ponemos el cursor sobre la barra de neoplasias, nos desplegara sus servicios específicos </p>
+      <div class="pt-3 h-75p align-items-center d-flex justify-content-center col-sm-12 col-md-12 col-lg-12">
+        <img src="static/img/visualizacion2.png">
+      </div>
+     </div>
+
+    </div>
+
+    <div class="parallax1"></div>
+  
+  </pr>	
+  <a id="xCodigoPrograma03" 
+      onclick="MostrarOcultar('CodigoPrograma03');" 
+      href="#_self">
+      <h4>&nbsp;&nbsp; &nbsp; &nbsp;
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+         <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+        </svg> Edad promedio por categoría
+      </h4>
+  </a>
+  
+  <pr id="CodigoPrograma03" 
+      style="display: none;">
+      
+  <div class="col-sm-12 col-md-12 col-lg-12 mifuente">
+    <p>&nbsp;En esta visualización se muestra una barra con la edad promedio por categoría, es decir se encuentran columnas con el nombre de categoría ordenado de mayor a menor de acuerdo con la cantidad de egresos dentro de los años 2000 al 2017</p>
+    <p>&nbsp;En la parte superior de las barras podemos encontrar la edad promedio dentro de cada respectiva categoría y en la parte inferior el nombre de la categoría</p>
+  </div>
+
+  <div class="pt-3 h-75p align-items-center d-flex justify-content-center col-sm-12 col-md-12 col-lg-12">
+    <img src="static/img/edad.png">
+  </div>
+
+
+<div class="col-sm-12 col-md-12 col-lg-12 mifuente text-center" >
+  <p> Si pasamos el cursor por encima de una barra, en una vista emergente, se muestran las edades principales que afectan a cada categoría como se muestra en la figura 4.1.3.2, podemos observar que en las enfermedades endocrinas la edad promedio es de 53 y las personas afectadas son principalmente de las edades de 60, 54,56 y 52 años. </p>
+  <div class="pt-3 h-75p align-items-center d-flex justify-content-center col-sm-12 col-md-12 col-lg-12">
+    <img src="static/img/emergente.png">
+  </div>
+</div>
+
+<div class="col-sm-12 col-md-12 col-lg-12 mifuente">
+  <p class="text-center"><b>Uso de filtros</b></p>   
+</div>
+
+
+<div class="col-sm-12 col-md-12 col-lg-12 mifuente text-center" >
+  <p>En esta ocasión los filtros que seleccionaremos es el año 2017, el estado de puebla y únicamente mujeres</p>
+  <div class="pt-3 h-75p align-items-center d-flex justify-content-center col-sm-12 col-md-12 col-lg-12">
+    <img src="static/img/filtro3.png">
+  </div>
+</div>
+
+
+<div class="row">
+
+  
+  <div class="col-sm-12 col-md-6 col-lg-6 mifuente text-center">
+  <p>El resultado que vamos a obtener es que la categoría con mas egresos es la de embarazo con 2,094 la cual va de una edad promedio de 26 </p>
+  <div class="pt-3 h-75p align-items-center d-flex justify-content-center col-sm-12 col-md-12 col-lg-12">
+    <img src="static/img/res3.png">
+  </div>
+  </div>
+
+  <div class="col-sm-12 col-md-6 col-lg-6 mifuente text-center" >
+    <p>En su vista emergente podemos observar que, en la categoría de embarazos, las principales edades que encontramos afectadas son de 20, 23 y 22</p>
+    <div class="pt-3 h-75p align-items-center d-flex justify-content-center col-sm-12 col-md-12 col-lg-12">
+      <img src="static/img/re3_1.png">
+    </div>
+  </div>
+  
+  </div>
+
+
+<div class="parallax1"></div>
+
+</pr>	
+
+      <a id="xCodigoPrograma04" 
+          onclick="MostrarOcultar('CodigoPrograma04');" 
+          href="#_self">
+          <h4>&nbsp;&nbsp; &nbsp; &nbsp;
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+            </svg> Mapa de defunciones por categoría
+          </h4>
+      </a>
+      
+      <pr id="CodigoPrograma04" 
+      style="display: none;">
+      
+      <div class="col-sm-12 col-md-12 col-lg-12 mifuente">
+        <p>&nbsp;En esta visualización se muestra un mapa de calor que representa de manera gráfica en que parte dentro de México han afectado más las enfermedades Crónicas no Transmisibles en un periodo del 2000 al 2017</p>
+      </div>
+
+  <div class="pt-3 h-75p align-items-center d-flex justify-content-center col-sm-12 col-md-12 col-lg-12">
+    <img src="static/img/defuncion.png">
+  </div>
+
+
+<div class="col-sm-12 col-md-12 col-lg-12 mifuente">
+  <p class="text-center"><b>Uso de filtros</b></p>   
+</div>
+
+<div class="row">
+  
+  <div class="col-sm-12 col-md-6 col-lg-6 mifuente text-center">
+  <p>En la siguiente visualización seleccionaremos el año 2003, en la categoría de enfermedades endocrinas </p>
+  <div class="pt-3 h-75p align-items-center d-flex justify-content-center col-sm-12 col-md-12 col-lg-12">
+    <img src="static/img/filtro4.png">
+  </div>
+  </div>
+
+  <div class="col-sm-12 col-md-6 col-lg-6 mifuente text-center" >
+    <p>Recordemos que podemos acercarnos y desplazarnos con las herramientas que se encuentran en el lado izquierdo</p>
+    <div class="pt-3 h-75p align-items-center d-flex justify-content-center col-sm-12 col-md-12 col-lg-12">
+      <img src="static/img/herramientav.png">
+    </div>
+  </div>
+  
+  </div>
+
+  
+    <div class="col-sm-12 col-md-12 col-lg-12 mifuente text-center">
+    <p>Una vez seleccionado los filtros podemos observar que el mapa de calor nos indica que el mayor número de defunciones se localiza en la ciudad de México, también en Guanajuato, Michoacán y Morelos el punto rojo es más intenso por lo que nos indica el mapa de calor que se localizaron defunciones en el año 2003 en la categoría de enfermedades endocrinas</p>
+    <div class="pt-3 h-75p align-items-center d-flex justify-content-center col-sm-12 col-md-12 col-lg-12">
+      <img src="static/img/mapas.png">
+    </div>
+    </div>
+  
+
+<div class="parallax1"></div>
+
+</pr>	
+  
+
+      <a id="xCodigoPrograma05" 
+          onclick="MostrarOcultar('CodigoPrograma05');" 
+          href="#_self">
+          <h4>&nbsp;&nbsp; &nbsp; &nbsp;
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+            </svg> Servicios por mes y por género
+          </h4>
+      </a>
+
+      <pr id="CodigoPrograma05" 
+      style="display: none;">
+      
+      <div class="col-sm-12 col-md-12 col-lg-12 mifuente">
+        <p>&nbsp;En esta visualización se muestra la distribución de los servicios de salud por género en cada mes, dentro de un periodo de 2000 al 2017, donde podemos ver las formas tanto de sexo masculino y femenino por mes y encontramos que en su mayoría el sexo que predomina es el de las mujeres</p>
+      </div>
+
+  <div class="pt-3 h-75p align-items-center d-flex justify-content-center col-sm-12 col-md-12 col-lg-12">
+    <img src="static/img/genero.png">
+  </div>
+
+<div class="col-sm-12 col-md-12 col-lg-12 mifuente">
+  <p class="text-center"><b>Uso de filtros</b></p>   
+</div>
+
+
+
+<div class="row">
+
+
+  <div class="col-sm-12 col-md-6 col-lg-6 mifuente text-center">
+  <p>Primeramente, seleccionaremos el año 2010, la categoría de aparato genitourinario y solo el estado de México </p>
+  <div class="pt-3 h-75p align-items-center d-flex justify-content-center col-sm-12 col-md-12 col-lg-12">
+    <img src="static/img/filtro5.png">
+  </div>
+  </div>
+
+  <div class="col-sm-12 col-md-6 col-lg-6 mifuente text-center" >
+    <p>Se observa que para esta consulta en el mes que más se presentaron casos fue en diciembre con 933 encabezados por las mujeres con un total de 492</p>
+    <div class="pt-3 h-75p align-items-center d-flex justify-content-center col-sm-12 col-md-12 col-lg-12">
+      <img src="static/img/res5.png">
+    </div>
+  </div>
+  
+  </div>
+
+  <div class="row">
+
+
+    <div class="col-sm-12 col-md-6 col-lg-6 mifuente text-center">
+    <p>Sin embargo, si seleccionamos solo el año 2010 y la categoría de genitourinario </p>
+    <div class="pt-3 h-75p align-items-center d-flex justify-content-center col-sm-12 col-md-12 col-lg-12">
+      <img src="static/img/filtro5_1.png">
+    </div>
+    </div>
+  
+    <div class="col-sm-12 col-md-6 col-lg-6 mifuente text-center" >
+      <p>El mayor número de casos se da en el mes de julio con 6,065, encabezado por hombres con 3201  </p>
+      <div class="pt-3 h-75p align-items-center d-flex justify-content-center col-sm-12 col-md-12 col-lg-12">
+        <img src="static/img/res5_1.png">
+      </div>
+    </div>
+    
+    </div>
+
+<div class="parallax1"></div>
+
+</pr>	
 
     <a name="periodo"></a>
 
@@ -208,22 +551,268 @@
      <div class="contenedor mifuente py-3 " style="background-color:white">
       <div class="row">
         <div class="col-sm-12 col-md-12 col-lg-12 text-center mifuente">
-          <p>&nbsp; En esta sección vamos a encontrar</p>
+          <p>&nbsp; En esta opción vamos a encontrar opciones como son ver el comportamiento entre periodos, por año y por categoría y así mismo por edad y por categoría, también por mes, pero este divido entre dos periodos uno del 2000 al 2007 y el otro del 2008 al 2017. </p>
         </div>
       </div>
       
-      <h4>&nbsp;&nbsp; &nbsp; &nbsp; <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
-      </svg> Por año y por categoría 2000 al 2017 </a></h4>
-      <h4>&nbsp;&nbsp; &nbsp; &nbsp; <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
-      </svg> Ánalisis por mes del periodo 2000 al 2007</a></h5>
-      <h4>&nbsp;&nbsp; &nbsp; &nbsp; <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
-      </svg> Ánalisis por mes del periodo 2008 al 2017</a></h4>
-      <h4>&nbsp;&nbsp; &nbsp; &nbsp; <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
-      </svg> Ánalisis por edad y categoría del periodo 2000 al 2017</a></h4>
+   
+      <a id="xCodigoPrograma06" 
+          onclick="MostrarOcultar('CodigoPrograma06');" 
+          href="#_self">
+          <h4>&nbsp;&nbsp; &nbsp; &nbsp;
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+            </svg> Por año y por categoría 2000 al 2017
+          </h4>
+      </a>
+
+      <pr id="CodigoPrograma06" 
+      style="display: none;">
+      
+      <div class="col-sm-12 col-md-12 col-lg-12 mifuente">
+        <p>&nbsp;Esta visualización está conformada principalmente por los años y las categorías donde se pueden encontrar las enfermedades crónicas nos transmisibles, nos muestra como se comportan a través de los años</p>
+      </div>
+      
+      <div class="pt-3 h-75p align-items-center d-flex justify-content-center col-sm-12 col-md-12 col-lg-12">
+        <img src="static/img/visualizacion6.png">
+      </div>
+      
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-6 mifuente text-center">
+          <p>Podemos observar que la categoría de enfermedades endocrinas en su punto más alto fue el año 2014 con un total de 66,434</p>
+          <div class="pt-3 h-75p align-items-center d-flex justify-content-center col-sm-12 col-md-12 col-lg-12">
+            <img src="static/img/puntoa.png">
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-6 mifuente text-center" >
+          <p>Su punto más bajo en el año 2000 con 28,644 </p>
+          <div class="pt-3 h-75p align-items-center d-flex justify-content-center col-sm-12 col-md-12 col-lg-12">
+            <img src="static/img/puntob.png">
+          </div>
+        </div>
+      
+      </div>
+     
+      
+      <div class="col-sm-12 col-md-12 col-lg-12 mifuente">
+        <p class="text-center"><b>Uso de filtros</b></p>   
+      </div>
+      
+      
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-6 mifuente text-center">
+          <p>Seleccionaremos en motivo de egreso defunción y únicamente el estado de Ciudad de México </p>
+          <div class="pt-3 h-75p align-items-center d-flex justify-content-center col-sm-12 col-md-12 col-lg-12">
+            <img src="static/img/filtro6.png">
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-6 mifuente text-center" >
+          <p>Una vez seleccionado los filtros podemos observar que el mayor número de defunciones en la Ciudad de México se dio en el año 2014 en la categoría de neoplasias con un total de 1,215</p>
+          <div class="pt-3 h-75p align-items-center d-flex justify-content-center col-sm-12 col-md-12 col-lg-12">
+            <img src="static/img/res6.png">
+          </div>
+        </div>
+      
+      </div>
+      
+      <div class="parallax1"></div>
+    
+    </pr>	
+
+      <a id="xCodigoPrograma07" 
+          onclick="MostrarOcultar('CodigoPrograma07');" 
+          href="#_self">
+          <h4>&nbsp;&nbsp; &nbsp; &nbsp;
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+            </svg> Por mes del periodo 2000 al 2007
+          </h4>
+      </a>
+
+      <pr id="CodigoPrograma07" 
+      style="display: none;">
+      
+      <div class="col-sm-12 col-md-12 col-lg-12 mifuente">
+        <p>&nbsp;En esta visualización podemos observar la cantidad de egresos por mes en un periodo de 8 años es decir del año 2000 al 2007, cada línea de color corresponde a un año y en la parte inferior están los meses</p>
+      </div>
+      
+      <div class="pt-3 h-75p align-items-center d-flex justify-content-center col-sm-12 col-md-12 col-lg-12">
+        <img src="static/img/visuallizacion7.png">
+      </div>
+
+      <div class="row">
+
+        <div class="col-sm-12 col-md-6 col-lg-6 mifuente text-center">
+          <p>Por ejemplo, podemos observar que la línea roja que representa al año 2001 el número mayor de egresos se dio en el mes de enero con 33,848 con una edad promedio de 45 años  </p>
+        <div class="pt-3 h-75p align-items-center d-flex justify-content-center col-sm-12 col-md-12 col-lg-12">
+          <img src="static/img/6_1.png">
+        </div>
+        </div>
+      
+        <div class="col-sm-12 col-md-6 col-lg-6 mifuente text-center" >
+          <p>En el mes más bajo de egresos fue en el mes de febrero con un total de 14,688 </p>
+          <div class="pt-3 h-75p align-items-center d-flex justify-content-center col-sm-12 col-md-12 col-lg-12">
+            <img src="static/img/6_2.png">
+          </div>
+        </div>
+        
+        </div>
+      
+      <div class="col-sm-12 col-md-12 col-lg-12 mifuente">
+        <p class="text-center"><b>Uso de filtros</b></p>   
+      </div>
+      
+      
+      <div class="row">
+        
+        <div class="col-sm-12 col-md-6 col-lg-6 mifuente text-center">
+          <p>Los filtros que seleccionaremos esta ocasión es el estado de jalisco y únicamente la categoría de enfermedades en el aparato digestivo </p>
+          <div class="pt-3 h-75p align-items-center d-flex justify-content-center col-sm-12 col-md-12 col-lg-12">
+            <img src="static/img/filtro7.png">
+          </div>
+        </div>
+        
+        <div class="col-sm-12 col-md-6 col-lg-6 mifuente text-center" >
+          <p>El resultado que vamos a obtener nos mostrara que el mayor número de egresos en jalisco de enfermedades del aparato digestivo fue en el 2007 en el mes de agosto con un total de 446 egresos </p>
+          <div class="pt-3 h-75p align-items-center d-flex justify-content-center col-sm-12 col-md-12 col-lg-12">
+            <img src="static/img/res7.png">
+          </div>
+        </div>
+      
+      </div>
+      
+      <div class="parallax1"></div>
+    
+    </pr>	
+
+      <a id="xCodigoPrograma08" 
+          onclick="MostrarOcultar('CodigoPrograma08');" 
+          href="#_self">
+          <h4>&nbsp;&nbsp; &nbsp; &nbsp;
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+            </svg>Por mes del periodo 2008 al 2017
+          </h4>
+      </a>
+
+      <pr id="CodigoPrograma08" 
+      style="display: none;">
+      
+      <div class="col-sm-12 col-md-12 col-lg-12 mifuente">
+        <p>&nbsp;La visualización muestra la cantidad de egresos por mes en un periodo de los siguientes 10 años es decir del año 2008 al 2017, cada línea de color corresponde a un año y en la parte inferior están los meses  </p>
+      </div>
+
+  <div class="pt-3 h-75p align-items-center d-flex justify-content-center col-sm-12 col-md-12 col-lg-12">
+    <img src="static/img/visuallizacion8.png">
+  </div>
+
+  <div class="row">
+    
+    <div class="col-sm-12 col-md-6 col-lg-6 mifuente text-center">
+      <p>Podemos observar que la línea amarilla que representa al año 2013, el número menor de egresos se dio en el mes de junio con 25,103 con una edad promedio de 46 años </p>
+      
+      <div class="pt-3 h-75p align-items-center d-flex justify-content-center col-sm-12 col-md-12 col-lg-12">
+        <img src="static/img/9_1.png">
+      </div>
+    </div>
+  
+    <div class="col-sm-12 col-md-6 col-lg-6 mifuente text-center" >
+      <p>El mes con más egresos fue en el mes de agosto con un total de 55,401</p>
+      <div class="pt-3 h-75p align-items-center d-flex justify-content-center col-sm-12 col-md-12 col-lg-12">
+        <img src="static/img/9_2.png">
+      </div>
+    </div>
+    
+    </div>
+    
+    <div class="col-sm-12 col-md-12 col-lg-12 mifuente">
+      <p class="text-center"><b>Uso de filtros</b></p>   
+    </div>
+    
+    <div class="row">
+      
+      <div class="col-sm-12 col-md-6 col-lg-6 mifuente text-center">
+        <p>En esta ocasión utilizaremos más filtros como es la selección del estado de Durango, únicamente el año 2015, enfermedades del sistema respiratorio y en motivo de egreso irá defunción</p>
+        <div class="pt-3 h-75p align-items-center d-flex justify-content-center col-sm-12 col-md-12 col-lg-12">
+          <img src="static/img/filtro9.png">
+        </div>
+      </div>
+      
+      <div class="col-sm-12 col-md-6 col-lg-6 mifuente text-center" >
+        <p>Obtendremos una sola línea que nos muestra que en el año 2015 el mes con más egresos por defunción fue agosto con una edad promedio de 71 </p>
+        <div class="pt-3 h-75p align-items-center d-flex justify-content-center col-sm-12 col-md-12 col-lg-12">
+          <img src="static/img/res9.png">
+        </div>
+      </div>
+    </div>
+    
+    <div class="parallax1"></div>
+  </pr>	
+
+      <a id="xCodigoPrograma09" 
+          onclick="MostrarOcultar('CodigoPrograma09');" 
+          href="#_self">
+          <h4>&nbsp;&nbsp; &nbsp; &nbsp;
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+            </svg>Por edad y categoría del periodo 2000 al 2017
+          </h4>
+      </a>
+
+      <pr id="CodigoPrograma09" 
+      style="display: none;">
+      
+      <div class="col-sm-12 col-md-12 col-lg-12 mifuente">
+        <p>&nbsp;La visualización muestra la presencia de edad en un periodo de años del 2000 al 2017, siendo las líneas de color las edades correspondientes </p>
+      </div>
+
+  <div class="pt-3 h-75p align-items-center d-flex justify-content-center col-sm-12 col-md-12 col-lg-12">
+    <img src="static/img/visualizacion10.png">
+  </div>
+  
+  <div class="row">
+    
+    <div class="col-sm-12 col-md-6 col-lg-6 mifuente text-center">
+      <p>Al seleccionar una línea en cierto punto podemos encontrar ciertos datos como son los que se muestran </p>
+      <div class="pt-3 h-75p align-items-center d-flex justify-content-center col-sm-12 col-md-12 col-lg-12">
+        <img src="static/img/10_1.png">
+      </div>
+    </div>
+    
+    <div class="col-sm-12 col-md-6 col-lg-6 mifuente text-center" >
+      <p>Por ejemplo, si seleccionamos la cantidad total de casos mayor en nuestra visualización podemos encontrar que la edad 56 en el año 2026 tiene un número de casos totales de 9,338 </p>
+    <div class="pt-3 h-75p align-items-center d-flex justify-content-center col-sm-12 col-md-12 col-lg-12">
+      <img src="static/img/10_2.png">
+    </div>
+  </div>
+  
+  </div>
+
+  <div class="col-sm-12 col-md-12 col-lg-12 mifuente">
+    <p class="text-center"><b>Uso de filtros</b></p>   
+  </div>
+  
+  <div class="row">
+    
+    <div class="col-sm-12 col-md-6 col-lg-6 mifuente text-center">
+      <p>Utilizaremos la selección única del estado del estado de Veracruz y la categoría del sistema osteomuscular </p>
+      <div class="pt-3 h-75p align-items-center d-flex justify-content-center col-sm-12 col-md-12 col-lg-12">
+        <img src="static/img/filtro10.png">
+      </div>
+    </div>
+    
+    <div class="col-sm-12 col-md-6 col-lg-6 mifuente text-center" >
+      <p>Una vez seleccionado esos parámetros podemos ver que en Veracruz la edad que se ve más afectada en las enfermedades del sistema osteomuscular es a los 30 años en el año 2017 </p>
+    <div class="pt-3 h-75p align-items-center d-flex justify-content-center col-sm-12 col-md-12 col-lg-12">
+      <img src="static/img/res10.png">
+    </div>
+  </div>
+  
+  </div>
+
+</pr>	
       
     </div>
 

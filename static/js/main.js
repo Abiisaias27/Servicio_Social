@@ -25,3 +25,16 @@ function main () {
 
 }
 
+function MostrarOcultar( ref ) 
+{  
+  var nodoContraible  = document.getElementById(ref); 
+  if (nodoContraible.style.display === 'none') 
+  {     
+	   nodoContraible.style.display ='block'; 
+  } 
+  else 
+  { 
+    nodoContraible.style.display ='none'; 
+  } 
+} 
+
